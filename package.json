@@ -1,0 +1,23 @@
+{
+  "name": "typescriptpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ota-creator/TypescriptPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ota-creator/TypescriptPractice/issues"
+  },
+  "homepage": "https://github.com/Ota-creator/TypescriptPractice#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
