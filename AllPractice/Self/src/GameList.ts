@@ -20,3 +20,20 @@ function showGamenames(games:Game[]){
 }
 
 showGamenames(games);
+
+//GameListから特定の条件のみを検索
+const gameGenre =games.filter( g => g.genre == "FPS");
+//console.log(gameGenre);
+
+/*filterは、配列の各要素を判定し、"true"の条件のみを取り出して
+～新しい配列を作成する～メソッド。今回、Game[]からgenre-FPSの条件を
+抽出し、新たなGame[]を作成しているというイメージ。*/
+
+/*mapオブジェクト、keyを指定しvalueを値として利用*/
+const gameGenres = new Map<Game>();
+Map.
+public set value(v : string) {
+    this. = v;
+}
+
+

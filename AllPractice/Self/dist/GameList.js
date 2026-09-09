@@ -12,3 +12,6 @@ function showGamenames(games) {
     }
 }
 showGamenames(games);
+//GameListから特定の条件のみを検索
+const gameGenre = games.filter(g => g.genre == "FPS");
+console.log(gameGenre);
