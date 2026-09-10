@@ -29,11 +29,8 @@ const gameGenre =games.filter( g => g.genre == "FPS");
 ～新しい配列を作成する～メソッド。今回、Game[]からgenre-FPSの条件を
 抽出し、新たなGame[]を作成しているというイメージ。*/
 
-/*mapオブジェクト、keyを指定しvalueを値として利用*/
-const gameGenres = new Map<Game>();
-Map.
-public set value(v : string) {
-    this. = v;
-}
+/*filterとmapを併用し、filterで作成した配列の中身をmapで再編成*/
+const gameGenres = gameGenre.map(genre => genre.genre);
+console.log(gameGenres);
 
 

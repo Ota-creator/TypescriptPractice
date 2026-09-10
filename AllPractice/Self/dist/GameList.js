@@ -14,4 +14,10 @@ function showGamenames(games) {
 showGamenames(games);
 //GameListから特定の条件のみを検索
 const gameGenre = games.filter(g => g.genre == "FPS");
-console.log(gameGenre);
+//console.log(gameGenre);
+/*filterは、配列の各要素を判定し、"true"の条件のみを取り出して
+～新しい配列を作成する～メソッド。今回、Game[]からgenre-FPSの条件を
+抽出し、新たなGame[]を作成しているというイメージ。*/
+/*filterとmapを併用し、filterで作成した配列の中身をmapで再編成*/
+const gameGenres = gameGenre.map(genre => genre.genre);
+console.log(gameGenres);
