@@ -39,10 +39,10 @@ console.log(gameGenres);
 取り出しただけで利用できないので、gameSerchオブジェクトとして定義
 関数として、最後にreturnで新しくなった配列を返す
 gameSerchsで検索用関数を用いて帰ってきた値を表示*/
-function searchGamesByGenre (game:Game[], genre:string){
-    const gameSearch = game.filter( game => game.genre == genre)
+function searchGamesByGenre (game:Game[], genre:string):Game[]{
+    const gameSearch:Game[] = game.filter( game => game.genre == genre)
     return gameSearch;
 }
 
-const gameSearchs = searchGamesByGenre(games,"FPS");
-console.log(gameSearchs);
+const searchedGame = searchGamesByGenre(games,"Sandbox");
+console.log(searchedGame);
