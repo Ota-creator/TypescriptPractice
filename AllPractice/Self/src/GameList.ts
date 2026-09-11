@@ -30,7 +30,19 @@ const gameGenre =games.filter( g => g.genre == "FPS");
 抽出し、新たなGame[]を作成しているというイメージ。*/
 
 /*filterとmapを併用し、filterで作成した配列の中身をmapで再編成*/
-const gameGenres = gameGenre.map(genre => genre.genre);
+const gameGenres = gameGenre.map(game => game.genre);
 console.log(gameGenres);
 
+/*games配列から特定の条件（今回genre）を指定して
+検索する関数。filterにおいて、再作成された配列を
+新たに入れる箱（オブジェクト）を宣言してあげないと要素を
+取り出しただけで利用できないので、gameSerchオブジェクトとして定義
+関数として、最後にreturnで新しくなった配列を返す
+gameSerchsで検索用関数を用いて帰ってきた値を表示*/
+function searchGamesByGenre (game:Game[], genre:string){
+    const gameSearch = game.filter( game => game.genre == genre)
+    return gameSearch;
+}
 
+const gameSearchs = searchGamesByGenre(games,"FPS");
+console.log(gameSearchs);
