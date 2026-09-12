@@ -1,4 +1,3 @@
-"use strict";
 //GameList
 const games = [
     { id: 1, name: "Escape From Tarkov", genre: "FPS" },
@@ -33,3 +32,4 @@ function searchGamesByGenre(game, genre) {
 }
 const searchedGame = searchGamesByGenre(games, "Sandbox");
 console.log(searchedGame);
+export {};
